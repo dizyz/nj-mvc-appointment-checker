@@ -1,12 +1,13 @@
 {
   "name": "nj-mvc-appointment-checker",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "Dizy",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "env-cmd ts-node --project src/tsconfig.json src/main.ts"
+    "start": "env-cmd ts-node --project src/tsconfig.json src/main.ts",
+    "build": "tsc --project src/tsconfig.json"
   },
   "devDependencies": {
     "@types/node": "^18.7.18",
